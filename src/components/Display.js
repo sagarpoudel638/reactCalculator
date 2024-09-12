@@ -1,10 +1,10 @@
 
 import '../App.css';
 
-function Display() {
+function Display(props) {
   return (
     <div className="display">
-            <input type="text" id="calc-display" readOnly/>
+            <input type="text" id="calc-display" value={props.value} readOnly/>
     </div>
     
   );
