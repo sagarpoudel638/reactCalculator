@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+**React Calculator**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple calculator built using React, which allows users to perform basic arithmetic operations. The app features a dynamic display and clickable buttons, connected through event listeners to perform real-time calculations.
 
-## Available Scripts
+**Features**
 
-In the project directory, you can run:
+•  Addition, Subtraction, Multiplication, and Division operations
 
-### `npm start`
+•  Real-time calculation display
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+•  Responsive design
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Project Structure**
 
-### `npm test`
+•  Wrapper.js: Contains the main structure of the calculator, including the "Display "and "Numpad"  components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+•  Display.js: Displays the current input or result.
 
-### `npm run build`
+•  Numpad.js: Contains the number and operator buttons, rendered using the Button component.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+•  Button.js: Represents each button in the calculator.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Getting Started**
 
-### `npm run eject`
+  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Prerequisites**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Before running the app, make sure you have the following installed on your machine:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  
 
-## Learn More
+•  [Node.js](https://nodejs.org/) (v14 or higher)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+•  [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  
 
-### Code Splitting
+**Installation**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  
 
-### Analyzing the Bundle Size
+1.  Clone the repository:   
+		`git clone https://github.com/your-username/react-calculator.git`
+2. Navigate to the project directory:
+	`cd react-calculator`
+3. Install the required dependencies:
+	`npm install`
+4. Alternatively, if you’re using Yarn:
+	`yarn install`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Starting the App**
+To run the app in development mode, use the following command:
+`npm start`
+_Or if using Yarn:_
+`yarn start`
 
-### Making a Progressive Web App
+The app will be available at [http://localhost:3000](http://localhost:3000) in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Building the App**
 
-### Advanced Configuration
+ 
+To build the app for production, run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+`npm run build`
+_Or if using Yarn:_
+`yarn build`
 
-### Deployment
+The build files will be placed in the build/ folder, optimized for performance.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  
 
-### `npm run build` fails to minify
+**Calculator Logic**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
+
+•  Each button is connected to an event listener using the forEach method in Numpad.js.
+
+•  The display is updated dynamically through the Display.js component.
+
+•  The eval() function is used to handle arithmetic operations when the user clicks the equals (=) button.
+
+  
+
+**Available Scripts**
+
+  
+
+•  npm start: Starts the development server.
+
+•  npm run build: Builds the project for production.
+
+•  npm test: Runs the test suite (if applicable).
+
+•  npm run eject: Ejects the app from Create React App (not recommended).
+
+  
+
+**Technologies Used**
+
+  
+
+•  **React**: A JavaScript library for building user interfaces.
+
+•  **CSS**: For styling the calculator components.
+
+•  **JavaScript**: The logic behind the calculator operations.
+
+  
+
+**License**
+
+  
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+  
+
+**Contributing**
+
+  
+
+If you’d like to contribute to this project, feel free to fork the repository and submit a pull request with your improvements.

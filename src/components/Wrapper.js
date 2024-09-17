@@ -22,6 +22,7 @@ const handleButtonClick = (buttonValue) =>{
   }
 }
 
+
   return (
     <div className="wrapper">
       <Display value ={display} />
